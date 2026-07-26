@@ -1,0 +1,12 @@
+CREATE TABLE settings
+(
+    id BIGSERIAL PRIMARY KEY,
+
+    setting_key VARCHAR(150) UNIQUE NOT NULL,
+
+    setting_value TEXT,
+
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
