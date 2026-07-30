@@ -84,12 +84,12 @@ public class SecurityConfig {
 
         CorsConfiguration configuration = new CorsConfiguration();
 
-        configuration.setAllowedOriginPatterns(
-                List.of(
-                        "http://localhost:5173",
-                        "https://*.vercel.app"
-                )
-        );
+        configuration.setAllowedOriginPatterns(List.of(
+                "http://localhost:5173",
+                "https://*.vercel.app",
+                "https://*.skillhiveedu.com",
+                "https://skillhiveedu.com"
+        ));
 
         configuration.setAllowedMethods(
                 List.of(
