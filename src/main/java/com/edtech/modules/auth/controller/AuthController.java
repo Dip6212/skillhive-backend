@@ -21,6 +21,8 @@ public class AuthController {
             @Valid @RequestBody LoginRequest request
     ) {
 
+        System.out.println("Controller reached");
+        System.out.println(request.getEmail());
         return ApiResponse.<LoginResponse>builder()
                 .success(true)
                 .message("Login successful")
